@@ -1,6 +1,6 @@
 Original Post: https://github.com/netvolt/LinuxRMM-Script
 # Objetivo
-Tive algumas dificuldades ao realizar a instalação do agent no linux devido ao meu rmm estar rodando apenas em rede local e também porque não não estava achando as opçoes de instalação no mesh.fqnd.com./////
+Tive algumas dificuldades ao realizar a instalação do agent no linux devido ao meu rmm estar rodando apenas em rede local e também porque não não estava achando as opçoes de instalação no mesh.fqnd.com.
 Com isso, eu fiz um pequena alteração no script para que ele aceite a instalação com o parametro ``--insecure`` e vou disponibilizar os prints de como realizar a operação para adição de novo host.
 
 # rmmagent-script
