@@ -17,7 +17,7 @@ Download the script that match your configuration
 
 ### Tips
 
-Download script with this url: `https://raw.githubusercontent.com/netvolt/LinuxRMM-Script/main/rmmagent-linux.sh`
+Download script with this url: `https://raw.githubusercontent.com/guilhermefr67/LinuxRMM-Script/main/rmmagent-linux.sh`
 
 For Ubuntu systems try: 'wget https://raw.githubusercontent.com/netvolt/LinuxRMM-Script/main/rmmagent-linux.sh'
 Make executable after downloading: 'sudo chmod +x rmmagent-linux.sh'  
