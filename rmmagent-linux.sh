@@ -231,7 +231,7 @@ function update_agent() {
 }
 function install_agent() {
         cp /tmp/temp_rmmagent /usr/local/bin/rmmagent
-        /tmp/temp_rmmagent -m install -api $rmm_url -client-id $rmm_client_id -site-id $rmm_site_id -agent-type $rmm_agent_type -auth $rmm_auth
+        /tmp/temp_rmmagent -m install --insecure -api $rmm_url -client-id $rmm_client_id -site-id $rmm_site_id -agent-type $rmm_agent_type -auth $rmm_auth
         rm /tmp/temp_rmmagent
 
         cat << "EOF" > /etc/systemd/system/tacticalagent.service
@@ -257,7 +257,7 @@ EOF
 
 function install_mesh() {
   ## Installing mesh agent
-  wget -O /tmp/meshagent $mesh_url
+  wget --no-check-certificate -O /tmp/meshagent $mesh_url
   chmod +x /tmp/meshagent
   mkdir /opt/tacticalmesh
   /tmp/meshagent -install --installPath="/opt/tacticalmesh"
