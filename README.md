@@ -1,8 +1,8 @@
 Original Post: https://github.com/netvolt/LinuxRMM-Script
 # Objetivo
-Tive algumas dificuldades ao realizar a instalação do agent no linux devido ao meu rmm estar rodando apenas em rede local e também porque não não estava achando as opçoes de instalação no mesh.fqnd.com.
+Tive algumas dificuldades ao realizar a instalação do agent no linux devido ao meu rmm estar rodando apenas em rede local e também porque não não estava achando as opçoes de instalação no mesh.fqdn.com.
 
-Com isso, eu fiz um pequena alteração no script para que ele aceite a instalação com o parametro ``--insecure`` e vou disponibilizar os prints de como realizar a operação para adição de novo host em mesh.fqdn.com
+Com isso, eu fiz um pequena alteração no script para que ele aceite a instalação com o paramêtro ``--insecure`` e vou disponibilizar os prints de como realizar a operação para adição de novo host em mesh.fqdn.com
 
 # rmmagent-script
 Script for one-line installing and update of tacticalRMM agent
@@ -53,6 +53,13 @@ The argument are:
   Go to mesh.fqdn.com > Add agent > Installation Executable Linux / BSD / macOS > **Select the good system type**
   Copy **ONLY** the URL with the quote.
   
+  ![image](https://github.com/user-attachments/assets/9c1e86ed-1ad3-41b4-9297-1845e8e55797)
+
+  Copy ONLY the URL with the quote
+
+  ![image](https://github.com/user-attachments/assets/21cc90e3-4540-4b7c-9589-4f3846e5f642)
+
+  
 4. API URL
 
   Your api URL for agent communication usually https://api.fqdn.com.
@@ -61,11 +68,17 @@ The argument are:
 
   The ID of the client in wich agent will be added.
   Can be view by hovering the name of the client in the dashboard.
+
+![image](https://github.com/user-attachments/assets/d9a0941e-a75c-4bd7-b55c-3e3583abf874)
+
   
 6. Site ID
 
   The ID of the site in wich agent will be added.
   Can be view by hovering the name of the site in the dashboard.
+
+![image](https://github.com/user-attachments/assets/1f6fabe5-bc00-44a6-b11f-c3053e1e99a2)
+
   
 7. Auth Key
 
@@ -78,7 +91,7 @@ The argument are:
   
 ### Example
 ```bash
-./rmmagent-linux.sh install 'amd64' 'https://mesh.fqdn.com/meshagents?id=XXXXX&installflags=X&meshinstall=X' 'https://api.fqdn.com' 3 1 'XXXXX' server
+./rmmagent-linux.sh install 'amd64' 'https://mesh.fqdn.com/meshagents?id=XXXXX&installflags=X&meshinstall=X' 'https://api.fqdn.com' '3' '1' 'XXXXX' 'server'
 ```
 
 ## Update
