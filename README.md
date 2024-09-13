@@ -122,6 +122,9 @@ The argument are:
   Go to mesh.fqdn.com > Add agent > Linux / BSD (Uninstall) > Copy **ONLY** the last value with the single quotes.
   You are looking for a 64 charaters long value of random letter case, numbers, and special characters.
 
+![uninstall](https://github.com/user-attachments/assets/7dc9c8fd-16f5-4dd7-b574-ed971770fd9b)
+
+
 ### Example
 ```bash
 ./rmmagent-linux.sh uninstall mesh.fqdn.com 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
